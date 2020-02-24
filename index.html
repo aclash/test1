@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet"  type="text/css" href="app.css">
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HW1</title>
+</head>
+<body>
+<div class="navbar">
+    <a class="home" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+    <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+    <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+    <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+</div>
+<div class="articleView">
+    <img class = "articleView_img" src="http://image.tmdb.org/t/p/original/5BwqwxMEjeFtdknRV792Svo0K1v.jpg" width = "400" height = "247" alt="W3Schools.com">
+    <div class = "articleView_text">
+        <h2>Latest Movie</h2>
+        <p style="font-size:1.2em;">The number one hero anime is back in theaters for a battle beyond anything fans have ever seen! Class 1-A visits Nabu Island where they finally get to do some real hero work. The place is so peaceful that it’s more like a vacation ...
+            The number one hero anime is back in theaters for a battle beyond anything fans have ever seen! Class 1-A visits Nabu Island where they finally get to do some real hero work. The place is so peaceful that it’s more like a vacation ...
+            The number one hero anime is back in theaters for a battle beyond anything fans have ever seen! Class 1-A visits Nabu Island where they finally get to do some real hero work. The place is so peaceful that it’s more like a vacation ...
+            The number one hero anime is back in theaters for a battle beyond anything fans have ever seen! Class 1-A visits Nabu Island where they finally get to do some real hero work. The place is so peaceful that it’s more like a vacation ...
+            The number one hero anime is back in theaters for a battle beyond anything fans have ever seen! Class 1-A visits Nabu Island where they finally get to do some real hero work. The place is so peaceful that it’s more like a vacation ...
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-75">
+      <div class="form_container">
+        <form action="/action_page.php">
+        
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" id="city" name="city" placeholder="New York">
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="NY">
+                </div>
+                <div class="col-50">
+                  <label for="zip">Zip</label>
+                  <input type="text" id="zip" name="zip" placeholder="10001">
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September">
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2018">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <input type="submit" value="Continue to checkout" class="btn">
+        </form>
+      </div>
+    </div>
+    <div class="col-25">
+      <div class="form_container">
+        <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+        <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+        <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+        <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+        <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+        <hr>
+        <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+      </div>
+    </div>
+</div>
+
+<div class="page">
+  <div class="timeline">
+    <div class="timeline__group">
+      <span class="timeline__year">2008</span>
+      <div class="timeline__box">
+        <div class="timeline__date">
+          <span class="timeline__day">2</span>
+          <span class="timeline__month">Feb</span>
+        </div>
+        <div class="timeline__post">
+          <div class="timeline__content">
+            <p>Attends the Philadelphia Museum School of Industrial Art. Studies design with Alexey Brodovitch, art director at Harper's Bazaar, and works as his assistant.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline__box">
+        <div class="timeline__date">
+          <span class="timeline__day">1</span>
+          <span class="timeline__month">Sept</span>
+        </div>
+        <div class="timeline__post">
+          <div class="timeline__content">
+            <p>Started from University of Pennsylvania. This is an important stage of my career. Here I worked in the local magazine. The experience greatly affected me</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="timeline__group">
+      <span class="timeline__year">2014</span>
+      <div class="timeline__box">
+        <div class="timeline__date">
+          <span class="timeline__day">14</span>
+          <span class="timeline__month">Jul</span>
+        </div>
+        <div class="timeline__post">
+          <div class="timeline__content">
+            <p>Travels to France, Italy, Spain, and Peru. After completing fashion editorial in Lima, prolongs stay to make portraits of local people in a daylight studio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="timeline__group">
+      <span class="timeline__year">2016</span>
+      <div class="timeline__box">
+        <div class="timeline__date">
+          <span class="timeline__day">28</span>
+          <span class="timeline__month">Aug</span>
+        </div>
+        <div class="timeline__post">
+          <div class="timeline__content">
+            <p>Upon moving to Brooklyn that summer, I began photographing weddings in Chicago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
