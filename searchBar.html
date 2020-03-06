@@ -75,9 +75,9 @@ input[type=submit] {
 <!--Make sure the form has the autocomplete function switched off:-->
 <form autocomplete="off" action="/action_page.php">
   <div class="autocomplete" style="width:300px;">
-    <input id="myInput" type="text" name="myCountry" placeholder="Country">
+    <input id="myInput" tabindex=0 type="text" name="myCountry" placeholder="Country">
   </div>
-  <input type="submit">
+  <input type="submit" tabindex=0>
 </form>
 
 <script>
@@ -108,7 +108,7 @@ function autocomplete(inp, arr) {
           b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
           b.innerHTML += arr[i].substr(val.length);
           /*insert a input field that will hold the current array item's value:*/
-          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "' tabindex='" + i + "'   >";
           /*execute a function when someone clicks on the item value (DIV element):*/
           b.addEventListener("click", function(e) {
               /*insert the value for the autocomplete text field:*/
@@ -144,6 +144,9 @@ function autocomplete(inp, arr) {
           /*and simulate a click on the "active" item:*/
           if (x) x[currentFocus].click();
         }
+      }else if (e.keyCode == 9){
+        currentFocus++;
+        addActive(x);
       }
   });
   function addActive(x) {
